@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to top, #cb9480d5, #ecbfafd5, #ec9e82d5);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o título h1 */
+h1 {
+    text-align: center;
+    color: #AB3A39;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px; /* Tamanho da fonte para dispositivos móveis */
+}
+
+/* Estilos para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de escala no hover para imagens */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o contêiner principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para a classe .A */
+.A {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para as imagens dentro de div > a */
+div > a img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para links no hover */
+a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* Estilos para o elemento com classe .h12 */
+.h12 {
+    color: black;
+}
+
+/* Estilos para o elemento com classe .m1 */
+.m1 {
+    display: block;
+    background-color: #edd8d1d5;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(15, 15, 15);
+    padding: 10px;
+    margin: 20px auto; /* Centraliza horizontalmente e mantém margem vertical */
+    width: 90%; /* Largura para dispositivos móveis */
+}
+
+/* Estilos para parágrafos dentro de .m1 */
+.m1 > p {
+    text-align: justify;
+}
+
+/* Estilos para cabeçalhos h2 */
+.m1 > h2 {
+    text-align: left;
+}
+
+/* Estilos para cabeçalhos h2 */
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AB3A39;
+}
+
+/* Estilos para telas menores que 600px (dispositivos móveis) */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+    }
+    .m1 {
+        width: 90%;
+    }
+    img {
+        margin: 0 5px; /* Aumenta o espaçamento horizontal entre as imagens */
+    }
+    .A {
+        flex-direction: row; /* Altera o fluxo de volta para linha */
+    }
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Estilos para a classe .icon */
+.icon {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* Estilize as classes para os ícones individuais (opcional) */
+.icon1 { background-image: url('Imagens/1.png'); }
+.icon2 { background-image: url('Imagens/2.png'); }
+.icon3 { background-image: url('Imagens/3.png'); }
+.icon4 { background-image: url('Imagens/4.png'); }
+.icon5 { background-image: url('Imagens/5.png'); }
+.icon7 { background-image: url('Imagens/7.png'); }
+.icon6 { background-image: url('Imagens/6.png'); }
+.voltar { background-image: url('Imagens/voltar.png'); }
+.icon9 { background-image: url('Imagens/9.png');}
+
+/* Estilos para a classe .icon-with-image */
+.icon-with-image {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.2s;
+}
+
+/* Efeito de escala no hover para .icon-with-image */
+.icon-with-image:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para a classe .voltar */
+.voltar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.2s;
+}
+
+
+.voltar {
+    margin: 0 auto; /* Define margem automática na horizontal para centralizar */
+    display: block; /* Para que a margem automática funcione */
+}
+
+
+/* Estilos de rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para grade de colunas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para cabeçalhos e parágrafos */
+h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/* Estilos para listas não ordenadas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para o rodapé fixo */
+.ft2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cart-icon {
+
+    color: #AB3A39;
+    position: absolute;
+    top: 56px; /* Ajuste a distância do topo conforme necessário */
+    right: 30px; /* Ajuste a distância da direita conforme necessário */
+    font-size: 24px; /* Tamanho do ícone */
+}
+
